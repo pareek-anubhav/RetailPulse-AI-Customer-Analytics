@@ -171,7 +171,7 @@ monthly_sales = (
     filtered_df.groupby(
         pd.Grouper(
             key="InvoiceDate",
-            freq="M"
+            freq="ME"
         )
     )["Sales"]
     .sum()
