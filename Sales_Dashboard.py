@@ -23,7 +23,7 @@ st.markdown("Analyze revenue, orders, products, customers and sales trends.")
 @st.cache_data
 def load_data():
     df = pd.read_csv(
-        "../data/cleaned_retail.csv",
+        "data/cleaned_retail.csv",
         parse_dates=["InvoiceDate"]
     )
     return df
