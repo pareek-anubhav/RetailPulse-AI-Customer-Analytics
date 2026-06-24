@@ -26,7 +26,7 @@ st.markdown(
 def load_data():
 
     forecast = pd.read_csv(
-        "../data/forcast_result.csv"
+        "data/forcast_result.csv"
     )
 
     forecast["ds"] = pd.to_datetime(
@@ -257,7 +257,7 @@ st.subheader(
 
 try:
     st.image(
-        "../pngs/forecast_components.png",
+        "pngs/forecast_components.png",
         use_container_width=True
     )
 except:
@@ -276,7 +276,7 @@ st.subheader(
 
 try:
     st.image(
-        "../pngs/demand_forcast.png",
+        "pngs/demand_forcast.png",
         use_container_width=True
     )
 except:

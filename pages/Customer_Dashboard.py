@@ -22,10 +22,10 @@ st.markdown("Customer Segmentation • Churn Analysis • RFM Insights")
 @st.cache_data
 def load_data():
 
-    segments = pd.read_csv("../data/customer_segments.csv")
+    segments = pd.read_csv("data/customer_segments.csv")
 
     churn = pd.read_csv(
-        "../data/customer_churn_predictions.csv"
+        "data/customer_churn_predictions.csv"
     )
 
     return segments, churn

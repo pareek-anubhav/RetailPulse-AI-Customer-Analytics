@@ -17,7 +17,7 @@ st.title("📦 Inventory Optimization Dashboard")
 @st.cache_data
 def load_data():
     return pd.read_csv(
-        "../data/inventory_optimization.csv"
+        "data/inventory_optimization.csv"
     )
 
 inventory = load_data()
